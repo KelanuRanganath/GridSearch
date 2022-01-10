@@ -2,9 +2,8 @@ clear
 clc
 
 headers = generateHeaders(airyIP);
-A = readlines('GridSearch.txt');
-B = replace(split(A(1),"&quot;")," ","+");
-C = strcat("classroom=",B(end-1));
+B = replace(split(A(1),"&quot;")," ","+")
+C = strcat("classroom=",B(end-1))
 
 
 %Sends HTTP request and returns the response data
